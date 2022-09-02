@@ -1,0 +1,34 @@
+body{
+    background-color: black;
+    color: burlywood;
+}
+#container{
+    border: 2px solid burlywood;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    text-align: center;
+    align-self: center;
+}
+#withinContainer{
+    /* background-color: purple; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+img:hover{
+    box-shadow:0px 5px 50px purple;
+}
+/* when flex-direction has been changed also align and justify get switched */
+
+@media screen and (max-width: 760px) {
+    #withinContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+}
